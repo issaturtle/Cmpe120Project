@@ -1,0 +1,37 @@
+.header {
+	nav {
+		padding: 24px;
+		// font-family: 'Zen Old Mincho', serif;
+		a {
+			text-decoration: none;
+		}
+	}
+	&__github {
+		color: blue;
+	}
+	//mobile
+	&__Menu {
+		> span {
+			display: block;
+			width: 26px;
+			height: 2px;
+			background-color: $darkBlue;
+			//if the line is not the last, add margin space
+			&:not(:last-child) {
+				margin-bottom: 3px;
+			}
+		}
+	}
+	&__links {
+		a {
+			font-size: 1rem;
+			color: $grayishBlue;
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+	}
+	&__cta {
+		font-size: 1rem;
+		color: white;
+	}
+}
